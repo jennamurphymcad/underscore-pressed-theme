@@ -103,7 +103,7 @@ add_action( 'widgets_init', 'pressedsqueezed_widgets_init' );
 function pressedsqueezed_scripts() {
 	wp_enqueue_style( 'pressedsqueezed-style', get_stylesheet_uri() );
 	
-		wp_enqueue_script( 'josefin', 'http://use.edgefonts.net/josefin-slab.js', false, false, false );
+	wp_enqueue_script( 'josefin', 'http://use.edgefonts.net/josefin-slab.js', false, false, false );
 	
 	wp_enqueue_script( 'merriweather', 'http://use.edgefonts.net/merriweather.js', false, false, false );
 	
