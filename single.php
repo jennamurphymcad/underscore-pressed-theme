@@ -15,6 +15,12 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'single' ); ?>
 
 			<?php the_post_navigation(); ?>
+			
+			<?php
+				if ( comments_open() || get_comments_number() ):
+						Comments_template();
+				endif;
+			?>
 
 		<?php endwhile; // end of the loop. ?>
 
